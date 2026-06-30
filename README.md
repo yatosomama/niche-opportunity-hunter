@@ -1,13 +1,13 @@
-# 🕵️ 冷门风口猎手 — Niche Opportunity Hunter
+# 🕵️ 冷门风口猎手 — Niche Opportunity Hunter（Hermes Agent Skill）
 
 > **🎯 风口藏在哪里？** 藏在那些错别字连篇、没有排版、附带着抱怨语气的隐秘对话里。  
 > **💰 真理：** 当大V开始复盘、小红书笔记刷屏、抖音拆解爆火时——这个项目已经死了。
 
-**冷门风口猎手** 是一套 AI 驱动的边缘信号捕获系统，能自动从 15+ 个信息源中发现别人还没注意到的套利机会、技术红利和偏门项目。
+**冷门风口猎手** 是一套 **Hermes Agent Skill**，自动从 15+ 个信息源中发现别人还没注意到的套利机会、技术红利和偏门项目。装上即用，每日自动扫描。
 
 ---
 
-## 🔥 为什么你需要它？
+## 🔥 为什么你需要这个 Skill？
 
 | 别人看到的 | 你看到的 |
 |-----------|---------|
@@ -16,7 +16,7 @@
 | 已经涨了300%的模型 | 刚发布才几十⭐的GitHub项目 |
 | 满屏的"风口分析" | 程序员论坛里一句抱怨的话 |
 
-**主流 = 已死。** 这套系统让你比市场提前 **3-6 个月** 发现信号。
+**主流 = 已死。** 这个 Skill 让你比市场提前 **3-6 个月** 发现信号。
 
 ---
 
@@ -55,91 +55,103 @@
 - ❌ "懂的来/私信我" ← 割韭菜
 
 ### 2️⃣ 黑话破译器
-自动翻译圈内黑话：
-```
-"低调撸3天"           → 已实际操作获益
-"卡bug了"              → 规则漏洞可用
-"API放开了"            → 技术门槛骤降
-"秒下"                 → 收益秒到账
-"无实名"               → 无需身份验证
-"跑通了"               → 流程验证通过
-```
+自动翻译圈内加密黑话：
+
+| 圈内黑话 | 真实含义 |
+|---------|---------|
+| "低调撸3天" | 已实际操作获益 |
+| "卡bug了" | 规则漏洞可用 |
+| "API放开了" | 技术门槛骤降 |
+| "秒下" | 收益秒到账 |
+| "无实名" | 无需身份验证 |
+| "跑通了" | 流程验证通过 |
 
 ### 3️⃣ 逆向工程侦查
 从一条隐秘帖子反向还原完整链路：
-1. 提取截图中的极小Logo → 识别工具
-2. 分析数据特征 → 推断收益规模
-3. 反查域名注册时间 → 判断新鲜度
-4. 追溯发帖人历史 → 拼凑技术栈
+1. 提取截图中的极小Logo → 识别工具/平台
+2. 分析提及的数据特征 → 推断收益规模
+3. 反查域名注册时间（whois）→ 判断项目新鲜度
+4. 追溯发帖人历史提问 → 拼凑技术栈
 
 ### 4️⃣ MVP 闭环验证
-2小时 + 几块钱 → 验证信息真伪：
+**2小时 + 几块钱** 验证信息真伪：
 - ✅ 跑通产生正向收益 → 放大操作
-- ❌ 跑不通 → 记录为伪信号
+- ❌ 跑不通 → 记录为伪信号，下次自动降权
 
 ---
 
-## 🚀 快速开始
+## 🚀 安装（作为 Hermes Agent Skill）
 
-### 安装
 ```bash
-git clone https://github.com/ejwujhjhhqwd/niche-opportunity-hunter.git
-cd niche-opportunity-hunter
+# 方法一：直接从 GitHub 安装
+git clone https://github.com/yatosomama/niche-opportunity-hunter.git
+cp -r niche-opportunity-hunter ~/.hermes/skills/micro-intel-capture/
+
+# 方法二：Hermes CLI
+hermes skills install yatosomama/niche-opportunity-hunter
+```
+
+### 依赖安装
+```bash
 pip install pyyaml requests
 ```
 
-### 全量扫描
-```bash
-python scripts/intel_scanner.py scan
-```
+---
 
-### 指定通道
+## 📋 用法
+
+### 触发词
+一旦装好 Skill，直接对你的 AI Agent 说：
+- **"帮我抓一下最近有什么搞钱风口"**
+- **"最近有什么新套利机会"**
+- **"监控一下XX关键词"**
+- **"这个项目是真的假的"**
+
+### 命令行扫描
 ```bash
-python scripts/intel_scanner.py scan v2ex    # 只扫V2EX
+python scripts/intel_scanner.py scan          # 全量扫描所有通道
+python scripts/intel_scanner.py scan v2ex     # 只扫V2EX
 python scripts/intel_scanner.py scan github   # 只扫GitHub
-```
-
-### 更多命令
-```bash
-python scripts/intel_scanner.py report       # 生成简报
-python scripts/intel_scanner.py watch KEY    # 监听关键词
-python scripts/intel_scanner.py sources      # 列出所有通道
+python scripts/intel_scanner.py report        # 生成今日情报简报
+python scripts/intel_scanner.py watch KEY     # 持续监听特定关键词
+python scripts/intel_scanner.py sources       # 列出所有情报源
+python scripts/intel_scanner.py analyze "XX"  # 深入分析指定线索
 ```
 
 ---
 
-## 📊 情报评分系统
+## 📊 情报可信度评分系统
 
-每条情报自动评分（0-100）：
+每条情报自动打分（0-100）：
 
-| 维度 | 满分 | 说明 |
-|:----:|:----:|------|
-| 发帖人可信度 | 30 | 老号+技术历史+无营销=高分 |
-| 信息具体度 | 30 | 有数据/截图/操作步骤=高分 |
-| 逻辑自洽度 | 20 | 收益合理+风险透明=高分 |
-| 先手优势 | 20 | 零回复+无大V转发=高分 |
+| 维度 | 满分 | 评分标准 |
+|:----:|:----:|----------|
+| 发帖人可信度 | 30 | 有技术提问历史(+15)、老号(+10)、无营销(+5) |
+| 信息具体度 | 30 | 含具体数据(+10)、有截图/链接(+10)、有操作步骤(+10) |
+| 逻辑自洽度 | 20 | 收益合理(+10)、风险透明(+5)、不完美(+5) |
+| 先手优势 | 20 | 零回复(+10)、发帖时间近(+5)、无大V转发(+5) |
 
 **评分解读：**
-- **80+** 🔥 立即行动，窗口期很短
+- **80+** 🔥 立即行动，窗口期极短
 - **60-79** 👀 重点关注，深入调研
-- **40-59** 📝 记录观察
+- **40-59** 📝 记录观察，定期复查
 - **<40** 🗑️ 噪声，忽略
 
 ---
 
-## 💰 商业化路径
+## 💰 商业化变现路径
 
 | 模式 | 说明 | 投入 | 产出 |
 |:----:|------|:----:|:----:|
-| **亲自套利** | 信息差→亲自入场 | 时间+小资金 | 🚀 天花板最高 |
-| **情报贩子** | 整理成内参卖 | 时间 | 💰 稳定现金流 |
-| **选题供应商** | 脱敏后卖给博主 | 极低 | 📈 轻资产 |
-| **API中转套利** | 批发→零售 | API成本 | 💰 月流水过万 |
-| **账号代充** | GPT/Claude代充 | 渠道 | ₿ 差价利润 |
+| **亲自套利** | 抓到信息差后自己快速入场 | 时间+小资金 | 🚀 天花板最高 |
+| **情报贩子** | 整理成内参卖给有执行力没时间的人 | 时间 | 💰 稳定现金流 |
+| **选题供应商** | 脱敏后卖给搞钱博主做素材 | 极低 | 📈 轻资产 |
+| **API中转套利** | 从大站批发→卖给小团队 | API成本 | 💰 月流水过万 |
+| **账号代充业务** | 帮人充值GPT/Claude/Codex | 渠道 | ₿ 差价利润 |
 
 ---
 
-## 🔍 每日扫描 SOP
+## 🔍 每日自动扫描 SOP
 
 ```
 09:00  📡 首次全量扫描（15分钟）
@@ -149,7 +161,7 @@ python scripts/intel_scanner.py sources      # 列出所有通道
 
 12:00  🎯 深入分析重点信号
        → 交叉验证
-       → 评估先手窗口
+       → 评估先手窗口期
 
 18:00  📋 输出《今日情报简报》
        → 按优先级排序
@@ -158,18 +170,28 @@ python scripts/intel_scanner.py sources      # 列出所有通道
 
 ---
 
-## ⚠️ 红线
+## ⚠️ 红线与防坑
 
-**必须：**
-✅ 信息验证先行 — 交叉验证
-✅ 最小成本试错 — 先花几块钱
-✅ 保持怀疑 — 越完美越可能是坑
+**必须遵守：**
+- ✅ 信息验证先行 — 交叉验证
+- ✅ 最小成本试错 — 先花几块钱验证
+- ✅ 保持怀疑 — 越完美越可能是坑
+- ✅ 记录溯源 — 每条信号记录来源URL
 
 **绝对不要：**
-❌ 不验证就入场
-❌ 信"稳赚不赔"
-❌ 忽略法律风险
-❌ 信"最后的入场机会"
+- ❌ 不验证就入场
+- ❌ 信"稳赚不赔"
+- ❌ 忽略法律风险
+- ❌ 信"最后的入场机会"
+
+**危险信号识别：**
+| 信号 | 判定 |
+|------|------|
+| 精美步骤图 | 引流定式 |
+| "懂的来/私信" | 割韭菜卖课 |
+| 引导去未知平台充值 | 资金盘/诈骗 |
+| 只有收益截图无操作过程 | 假信号 |
+| 制造焦虑+限时紧迫 | 洗脑转化 |
 
 ---
 
@@ -177,14 +199,14 @@ python scripts/intel_scanner.py sources      # 列出所有通道
 
 ```
 niche-opportunity-hunter/
-├── README.md                  # 项目说明
-├── SKILL.md                   # Hermes Agent Skill 配置
+├── README.md                  ← 你正在看的
+├── SKILL.md                   ← Hermes Agent Skill 配置（核心）
 ├── scripts/
-│   ├── intel_scanner.py       # 核心扫描器（15通道）
-│   └── computer_agent.py      # 电脑操控辅助脚本
+│   ├── intel_scanner.py       ← 核心扫描器（15通道，509行）
+│   └── computer_agent.py      ← 电脑操控辅助脚本
 ├── references/
-│   ├── jina-reader-intel.md   # Jina Reader 实战手册
-│   └── money-making-intel.md  # 赚钱/白嫖信号参考
+│   ├── jina-reader-intel.md   ← Jina Reader 实战手册
+│   └── money-making-intel.md  ← 赚钱/白嫖信号完整参考
 └── .gitignore
 ```
 
@@ -192,9 +214,10 @@ niche-opportunity-hunter/
 
 ## 📜 许可
 
-MIT License
+MIT License — 随便用，随便改，赚了钱不用分我。
 
 ---
 
 > **版本 2.0.0** | 由 Hermes Agent + DeepSeek V4 驱动  
+> **原作者：** [yatosomama](https://github.com/yatosomama)  
 > **核心理念：** 热门即黄昏。真正的机会永远在信息金字塔的底部。
