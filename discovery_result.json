@@ -1,0 +1,158 @@
+{
+  "runtime_discovered": {
+    "hackernews": 0,
+    "github": 5,
+    "arxiv": 80,
+    "producthunt": 0,
+    "rss": 200,
+    "wikipedia": 86,
+    "telegram": 20
+  },
+  "pre_written": 657,
+  "template_expanded": 14930,
+  "grand_total": 15978,
+  "sources_detail": {
+    "hackernews": [],
+    "github": [
+      {
+        "name": "deepseek-ai/DeepSpec",
+        "url": "https://github.com/deepseek-ai/DeepSpec",
+        "stars": 4114,
+        "desc": "DeepSpec: a full-stack codebase for training and evaluating speculative decoding algorithms",
+        "type": "github_repo"
+      },
+      {
+        "name": "bozhouDev/codex-orange-book",
+        "url": "https://github.com/bozhouDev/codex-orange-book",
+        "stars": 2381,
+        "desc": "Codex 橙皮书：从安装到实战案例的全链路 Codex 使用指南（非官方开源，含可下载 PDF）",
+        "type": "github_repo"
+      },
+      {
+        "name": "Yu9191/wloc",
+        "url": "https://github.com/Yu9191/wloc",
+        "stars": 1556,
+        "desc": "修改 Apple 网络定位（gs-loc）返回坐标 · 支持 Surge / Quantumult X / Loon / Stash · 快捷指令一键设置/恢复定位",
+        "type": "github_repo"
+      },
+      {
+        "name": "Krishnagangwal/CS-Fundamentals",
+        "url": "https://github.com/Krishnagangwal/CS-Fundamentals",
+        "stars": 989,
+        "desc": "Curated CS fundamentals for placement prep: DSA,Computer Networks, DBMS & SQL, OOPs, Operating Syste",
+        "type": "github_repo"
+      },
+      {
+        "name": "baairon/torlink",
+        "url": "https://github.com/baairon/torlink",
+        "stars": 743,
+        "desc": "A sleek, zero-setup torrent finder and downloader that lives right in your terminal.",
+        "type": "github_repo"
+      }
+    ],
+    "arxiv": [
+      {
+        "title": "VLK: Learning Humanoid Loco-Manipulation from Synthetic Interactions in Reconstructed Scenes",
+        "category": "cs.AI",
+        "type": "arxiv_paper"
+      },
+      {
+        "title": "LeVo 2: Stable and Melodious Song Generation via Hierarchical Representation Modeling and Progressiv",
+        "category": "cs.AI",
+        "type": "arxiv_paper"
+      },
+      {
+        "title": "Self-Evolving World Models for LLM Agent Planning",
+        "category": "cs.AI",
+        "type": "arxiv_paper"
+      },
+      {
+        "title": "GROW$^2$: Grounding Which and Where for Robot Tool Use",
+        "category": "cs.AI",
+        "type": "arxiv_paper"
+      },
+      {
+        "title": "Pessimism's Paradox: Conservative Offline Training Amplifies Reward Hacking During Online Adaptation",
+        "category": "cs.AI",
+        "type": "arxiv_paper"
+      }
+    ],
+    "producthunt": [],
+    "rss": [
+      {
+        "url": "https://raw.githubusercontent.com/spians/awesome-RSS-feeds/master/countries/with_category/Australia.opml",
+        "type": "rss_feed"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/spians/awesome-RSS-feeds/master/countries/without_category/Australia.opml",
+        "type": "rss_feed"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/spians/awesome-RSS-feeds/master/countries/with_category/Bangladesh.opml",
+        "type": "rss_feed"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/spians/awesome-RSS-feeds/master/countries/without_category/Bangladesh.opml",
+        "type": "rss_feed"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/spians/awesome-RSS-feeds/master/countries/with_category/Brazil.opml",
+        "type": "rss_feed"
+      }
+    ],
+    "wikipedia": [
+      {
+        "title": "*   [(Top)](https://en.wikipedia.org/wiki/List_of_newspapers_by_country#)",
+        "source": "Wikipedia各国报纸",
+        "type": "wikipedia_list"
+      },
+      {
+        "title": "*   [1 Africa](https://en.wikipedia.org/wiki/List_of_newspapers_by_country#Africa)",
+        "source": "Wikipedia各国报纸",
+        "type": "wikipedia_list"
+      },
+      {
+        "title": "*   [2 Asia](https://en.wikipedia.org/wiki/List_of_newspapers_by_country#Asia)",
+        "source": "Wikipedia各国报纸",
+        "type": "wikipedia_list"
+      },
+      {
+        "title": "*   [3 Europe](https://en.wikipedia.org/wiki/List_of_newspapers_by_country#Europe)",
+        "source": "Wikipedia各国报纸",
+        "type": "wikipedia_list"
+      },
+      {
+        "title": "*   [4 North America](https://en.wikipedia.org/wiki/List_of_newspapers_by_country#North_America)",
+        "source": "Wikipedia各国报纸",
+        "type": "wikipedia_list"
+      }
+    ],
+    "telegram": [
+      {
+        "name": "AI News",
+        "url": "https://t.me/s/AINews",
+        "type": "telegram_channel"
+      },
+      {
+        "name": "TechCrunch",
+        "url": "https://t.me/s/TechCrunch",
+        "type": "telegram_channel"
+      },
+      {
+        "name": "Bloomberg",
+        "url": "https://t.me/s/Bloomberg",
+        "type": "telegram_channel"
+      },
+      {
+        "name": "Reuters",
+        "url": "https://t.me/s/Reuters",
+        "type": "telegram_channel"
+      },
+      {
+        "name": "BBC News",
+        "url": "https://t.me/s/BBCNews",
+        "type": "telegram_channel"
+      }
+    ]
+  }
+}
